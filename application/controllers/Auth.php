@@ -16,6 +16,10 @@ class Auth extends CI_Controller {
 		echo $this->template_engine->render('auth::form', ['name' => 'Jonathan']);
 	}
 
+	public function dashboard() {
+		echo $this->template_engine->render('auth::dashboard');
+	}
+
 	public function getData(){
 
 		$draw = $_REQUEST['draw'];

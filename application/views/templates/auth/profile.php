@@ -488,7 +488,7 @@
     //   "processing": true,
     //   "serverSide": true,
     //   "ajax": {
-    //       "url": "<?php echo base_url('index.php/table/ambil_data') ?>",
+    //       "url": "<?php echo base_url('index.php/auth/getdata') ?>",
     //       "type":'POST',
     //       }
     });
