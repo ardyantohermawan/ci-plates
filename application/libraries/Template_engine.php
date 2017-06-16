@@ -10,7 +10,9 @@ class Template_engine {
 		$templates->addFolder('auth', APPPATH . 'views/templates/auth');
 		$templates->loadExtension(new League\Plates\Extension\Asset(getcwd() . '/assets/', false));
 		$templates->loadExtension(new League\Plates\Extension\URI($request->getPathInfo()));
-        
+        $templates->registerFunction('base_url', function ($path){
+            return base_url($path);
+        });
         return $templates->render($base, $data);
     }
 }

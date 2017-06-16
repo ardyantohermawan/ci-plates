@@ -1,12 +1,12 @@
 <?php $this->layout('base', ['title' => 'User Profile']) ?>
 
 <?php $this->start('style') ?>
-<link rel="stylesheet" href="/assets<?=$this->asset('/plugins/daterangepicker/daterangepicker.css')?>" />
-<link rel="stylesheet" href="/assets<?=$this->asset('/plugins/datepicker/datepicker3.css')?>" />
-<link rel="stylesheet" href="/assets<?=$this->asset('/plugins/iCheck/all.css')?>" />
-<link rel="stylesheet" href="/assets<?=$this->asset('/plugins/colorpicker/bootstrap-colorpicker.min.css')?>" />
-<link rel="stylesheet" href="/assets<?=$this->asset('/plugins/timepicker/bootstrap-timepicker.min.css')?>" />
-<link rel="stylesheet" href="/assets<?=$this->asset('/plugins/select2/select2.min.css')?>" />
+<link rel="stylesheet" href="<?=$this->base_url('/assets').$this->asset('/plugins/daterangepicker/daterangepicker.css')?>" />
+<link rel="stylesheet" href="<?=$this->base_url('/assets').$this->asset('/plugins/datepicker/datepicker3.css')?>" />
+<link rel="stylesheet" href="<?=$this->base_url('/assets').$this->asset('/plugins/iCheck/all.css')?>" />
+<link rel="stylesheet" href="<?=$this->base_url('/assets').$this->asset('/plugins/colorpicker/bootstrap-colorpicker.min.css')?>" />
+<link rel="stylesheet" href="<?=$this->base_url('/assets').$this->asset('/plugins/timepicker/bootstrap-timepicker.min.css')?>" />
+<link rel="stylesheet" href="<?=$this->base_url('/assets').$this->asset('/plugins/select2/select2.min.css')?>" />
 <?php $this->stop() ?>
 
 <?php $this->start('container') ?>
@@ -421,17 +421,17 @@
 <?php $this->stop() ?>
 
 <?php $this->start('javascript') ?>
-<script src="/assets<?=$this->asset('/plugins/select2/select2.full.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/select2/select2.full.min.js')?>"></script>
 
-<script src="/assets<?=$this->asset('/plugins/input-mask/jquery.inputmask.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/input-mask/jquery.inputmask.date.extensions.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/input-mask/jquery.inputmask.extensions.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/input-mask/jquery.inputmask.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/input-mask/jquery.inputmask.date.extensions.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/input-mask/jquery.inputmask.extensions.js')?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-<script src="/assets<?=$this->asset('/plugins/daterangepicker/daterangepicker.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/datepicker/bootstrap-datepicker.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/colorpicker/bootstrap-colorpicker.min.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/timepicker/bootstrap-timepicker.min.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/iCheck/icheck.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/daterangepicker/daterangepicker.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/datepicker/bootstrap-datepicker.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/colorpicker/bootstrap-colorpicker.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/timepicker/bootstrap-timepicker.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/iCheck/icheck.min.js')?>"></script>
 
 <script>
   $(function () {

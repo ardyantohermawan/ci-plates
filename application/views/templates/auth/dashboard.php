@@ -840,11 +840,11 @@
 
 <?php $this->start('javascript') ?>
 
-<script src="/assets<?=$this->asset('/plugins/sparkline/jquery.sparkline.min.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/slimScroll/jquery.slimscroll.min.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/chartjs/Chart.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/sparkline/jquery.sparkline.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/slimScroll/jquery.slimscroll.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/chartjs/Chart.min.js')?>"></script>
 
 
 <script>

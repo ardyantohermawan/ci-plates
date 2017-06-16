@@ -1,7 +1,7 @@
 <?php $this->layout('base', ['title' => 'User Profile']) ?>
 
 <?php $this->start('style') ?>
-<link rel="stylesheet" href="/assets<?=$this->asset('/plugins/datatables/dataTables.bootstrap.css')?>" />
+<link rel="stylesheet" href="<?=$this->base_url('/assets').$this->asset('/plugins/datatables/dataTables.bootstrap.css')?>" />
 <?php $this->stop() ?>
 
 <?php $this->start('container') ?>
@@ -472,8 +472,8 @@
 <?php $this->stop() ?>
 
 <?php $this->start('javascript') ?>
-<script src="/assets<?=$this->asset('/plugins/datatables/jquery.dataTables.min.js')?>"></script>
-<script src="/assets<?=$this->asset('/plugins/datatables/dataTables.bootstrap.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/datatables/jquery.dataTables.min.js')?>"></script>
+<script src="<?=$this->base_url('/assets').$this->asset('/plugins/datatables/dataTables.bootstrap.min.js')?>"></script>
 <script>
   $(function () {
     $("#example1").DataTable();
