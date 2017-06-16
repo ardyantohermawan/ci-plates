@@ -1,14 +1,22 @@
 {
-	"description": "Integration Codeigniter, Plates template engine and Admin LTE",
+	"description": "Integration Codeigniter, Plates template engine, Admin LTE and Eloquent ORM",
 	"name": "ardyantohermawan/ci-plates",
 	"type": "project",
 	"license": "MIT",
 	"require": {
 		"php": ">=5.2.4",
 		"league/plates": "^3.3",
-		"symfony/http-foundation": "^3.2"
+		"symfony/http-foundation": "^3.2",
+		"illuminate/database": "5.2.45"
 	},
 	"require-dev": {
 		"mikey179/vfsStream": "1.1.*"
-	}
+	},
+	"autoload": {
+        "classmap": [
+            "application/core",
+            "application/models",
+            "application/libraries"
+        ]
+    }
 }
